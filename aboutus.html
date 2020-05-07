@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <!-- external stylesheet -->
+    <link rel="stylesheet"  href="styles.css">
+
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+
+          <!-- Nav Bar -->
+          <nav class="navbar navbar-expand-sm navbar-light sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="home.html"><img class="logo-img" src="images/logo4.png" height="50" width="70" /></a>
+                <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#nucampNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-right collapse navbar-collapse" id="nucampNavbar">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item "><a class="nav-link" href="index.html"><i class="fa fa-home fa-lg"></i> Home</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="aboutus.html"><i class="fa fa-info fa-lg"></i> About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="gallery.html"> <i class="fa fa-picture-o"></i> Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html"><i class="fa fa-address-card fa-lg"></i> Contact</a></li>
+                        <div class="ml-5">
+                          <a href="" class="btn btn-info btn-rounded mb-4" data-toggle="modal" data-target="#loginModal"><i class="fa fa-sign-in" aria-hidden="true"></i>Login</a>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+         <!-- login modal -->
+         <div id="loginModal" class="modal fade" role="dialog">
+          <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h3 class="modal-title">Login </h3>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                  <div class="modal-body">
+                      <div class="container-fluid">
+                          <form>
+                              <div class="form-row">
+                                  <div class="form-group col-12">
+                                      <label class="sr-only" for="loginEmail">Email address</label>
+                                      <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
+                                  </div>
+                                  <div class="form-group col-12">
+                                      <label class="sr-only" for="loginPassword">Password</label>
+                                      <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
+                                  </div>
+                                  <div class="col">
+                                      <div class="form-check">
+                                          <input class="form-check-input" type="checkbox">
+                                          <label class="form-check-label"> Remember me
+                                          </label>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="form-row">
+                                  <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                                  <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                              </div>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+        <!-- jumbotron -->
+        <div class="jumbotron" >
+            
+          <h1 class="display-4">Hello, world!</h1>
+          <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+          <hr class="my-4">
+          <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+          <p class="lead">
+           
+          <!-- <button type="button" class="btn btn-success btn-lg login-button "><i class="fab fa-google-play"></i> Sign Up</button> -->
+          <!-- <img class="title-image" src="images/img4.jpg" alt="iphone-mockup"> -->
+          <div class="text-center">
+            <a href="" class="btn btn-success btn-rounded mb-4" data-toggle="modal" data-target="#modalRegisterForm">Register</a>
+          </div>
+          </p>
+
+          
+        </div>
+        <!-- singup modal -->
+        <div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Sign up</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <i class="fa fa-user" aria-hidden="true"></i>
+          <input type="text" id="orangeForm-name" class="form-control validate">
+          <label data-error="wrong" data-success="right" for="orangeForm-name">Your name</label>
+        </div>
+        <div class="md-form mb-5">
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+          <input type="email" id="orangeForm-email" class="form-control validate">
+          <label data-error="wrong" data-success="right" for="orangeForm-email">Your email</label>
+        </div>
+
+        <div class="md-form mb-4">
+          <i class="fa fa-unlock" aria-hidden="true"></i>
+          <input type="password" id="orangeForm-pass" class="form-control validate">
+          <label data-error="wrong" data-success="right" for="orangeForm-pass">Your password</label>
+        </div>
+
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <button class="btn btn-primary">Sign up</button>
+      </div>
+    </div>
+  </div>
+</div>
+        <!-- carousel -->
+        
+
+            <!-- cut this part  -->
+            <div class="container marketing">
+
+                <!-- Three columns of text below the carousel -->
+                <div class="row">
+                  <div class="col-lg-4">
+                    <img class="rounded-circle" src="images/img6.jpg" alt="Generic placeholder image" width="140" height="140">
+                    <h2>Check Availability</h2>
+                    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+                    <p><a class="btn btn-outline-info" href="index.html" role="button">View details »</a></p>
+                  </div><!-- /.col-lg-4 -->
+                  <div class="col-lg-4">
+                    <img class="rounded-circle" src="images/img5.jpg" alt="Generic placeholder image" width="140" height="140">
+                    <h2>contact Us</h2>
+                    <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+                    <p><a class="btn btn-outline-info" href="contact.html" role="button">View details »</a></p>
+                  </div><!-- /.col-lg-4 -->
+                  <div class="col-lg-4">
+                    <img class="rounded-circle" src="images/img17.jpg" alt="Generic placeholder image" width="140" height="140">
+                    <h2>gallery</h2>
+                    <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                    <p><a class="btn btn-outline-info" href="gallery.html" role="button">View details »</a></p>
+                  </div><!-- /.col-lg-4 -->
+                </div><!-- /.row -->
+        
+        
+                <!-- START THE FEATURETTES -->
+        
+                <hr class="featurette-divider">
+        
+                <div class="row featurette">
+                  <div class="col-md-7">
+                    <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
+                    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                  </div>
+                  <div class="col-md-5">
+                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 500px;" src="images/img21.jpg" data-holder-rendered="true">
+                  </div>
+                </div>
+        
+                <hr class="featurette-divider">
+        
+                <div class="row featurette">
+                  <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
+                    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                  </div>
+                  <div class="col-md-5 order-md-1">
+                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="images/img18.jpg" data-holder-rendered="true" style="width: 500px; height: 500px;">
+                  </div>
+                </div>
+        
+                <hr class="featurette-divider">
+        
+                <div class="row featurette">
+                  <div class="col-md-7">
+                    <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+                    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                  </div>
+                  <div class="col-md-5">
+                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="images/img7.jpg" data-holder-rendered="true" style="width: 500px; height: 500px;">
+                  </div>
+                </div>
+        
+                <hr class="featurette-divider">
+        
+                <!-- /END THE FEATURETTES -->
+        
+              </div>
+        <!-- Footer -->
+
+            <footer class="white-section" id="footer">
+              <div class=" col-6 col-sm-5 mx-auto text-center">
+                <h5>Social</h5>
+                <a class="btn btn-social-icon  btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+                <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+                <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+            </div>
+            <div class="col-sm-4 mx-auto text-center">
+                <a role="button" class="btn btn-link" href="tel:+12065551234"><i class="fa fa-phone"></i> 1-206-555-1234</a><br />
+                <a role="button" class="btn btn-link" href="Hawkpines@gmail.com"><i class="fa fa-envelope-o"></i> Hawkpines@gmail.com</a>
+                <p>© Copyright 2020</p>
+            </div>
+
+            </footer>
+
+           <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+           <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+           <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+           <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+      </body>
+      </html>
