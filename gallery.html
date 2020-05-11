@@ -10,15 +10,15 @@
     <link rel="stylesheet"  href="styles.css">
 
     <!-- google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
-    <title>Document</title>
+    
+    <title>Hawk Pines Hotel</title>
 </head>
 <body>
 
           <!-- Nav Bar -->
           <nav class="navbar navbar-expand-sm navbar-light sticky-top">
             <div class="container">
-                <a class="navbar-brand" href="home.html"><img class="logo-img" src="images/logo4.png" height="50" width="70" /></a>
+                <a class="navbar-brand" href="index.html"><img class="logo-img" src="images/logo4.png" height="50" width="70" /></a>
                 <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#nucampNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -29,7 +29,7 @@
                         <li class="nav-item active"><a class="nav-link" href="gallery.html"> <i class="fa fa-picture-o"></i> Gallery</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact.html"><i class="fa fa-address-card fa-lg"></i> Contact</a></li>
                         <div class="ml-5">
-                          <a href="" class="btn btn-info btn-rounded mb-4" data-toggle="modal" data-target="#loginModal"><i class="fa fa-sign-in" aria-hidden="true"></i>Login</a>
+                          <a role="button" class="btn btn-info btn-rounded mb-4 text-white" data-toggle="modal" data-target="#loginModal"><i class="fa fa-sign-in" aria-hidden="true"></i>Login</a>
                         </div>
                         
                     </ul>
@@ -40,7 +40,7 @@
         <div id="loginModal" class="modal fade" role="dialog">
           <div class="modal-dialog" role="document">
               <div class="modal-content">
-                  <div class="modal-header">
+                  <div class="modal-header bg-info">
                       <h3 class="modal-title">Login </h3>
                       <button type="button" class="close" data-dismiss="modal">&times;</button>
                   </div>
@@ -65,8 +65,8 @@
                                   </div>
                               </div>
                               <div class="form-row">
-                                  <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
-                                  <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                                  <button type="button" class="btn btn-danger btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                                  <button type="submit" class="btn btn-success btn-sm ml-1">Sign in</button>
                               </div>
                           </form>
                       </div>
@@ -80,6 +80,8 @@
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -129,5 +131,6 @@
          <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
          <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
          <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+         <script src="script.js"></script>
     </body>
     </html>

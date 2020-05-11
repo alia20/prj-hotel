@@ -1,2 +1,0 @@
-# prj-hotel
-prj-Hotel

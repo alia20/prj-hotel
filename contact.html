@@ -10,15 +10,15 @@
     <link rel="stylesheet"  href="styles.css">
 
     <!-- google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
-    <title>Document</title>
+    
+    <title>Hawk Pines Hotel</title>
 </head>
 <body>
 
           <!-- Nav Bar -->
           <nav class="navbar navbar-expand-sm navbar-light sticky-top">
             <div class="container">
-                <a class="navbar-brand" href="home.html"><img class="logo-img" src="images/logo4.png" height="50" width="70" /></a>
+                <a class="navbar-brand" href="index.html"><img class="logo-img" src="images/logo4.png" height="50" width="70" /></a>
                 <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#nucampNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -29,7 +29,7 @@
                         <li class="nav-item"><a class="nav-link" href="gallery.html"> <i class="fa fa-picture-o"></i> Gallery</a></li>
                         <li class="nav-item active"><a class="nav-link" href="contact.html"><i class="fa fa-address-card fa-lg"></i> Contact</a></li>
                         <div class="ml-5">
-                            <a href="" class="btn btn-info btn-rounded mb-4" data-toggle="modal" data-target="#loginModal"><i class="fa fa-sign-in" aria-hidden="true"></i>Login</a>
+                            <a role="button" class="btn btn-info btn-rounded mb-4 text-white" data-toggle="modal" data-target="#loginModal"><i class="fa fa-sign-in" aria-hidden="true"></i>Login</a>
                           </div>
                       </ul>
                   </div>
@@ -39,7 +39,7 @@
           <div id="loginModal" class="modal fade" role="dialog">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
-                    <div class="modal-header">
+                    <div class="modal-header bg-info">
                         <h3 class="modal-title">Login </h3>
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
@@ -64,8 +64,8 @@
                                     </div>
                                 </div>
                                 <div class="form-row">
-                                    <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
-                                    <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                                    <button type="button" class="btn btn-danger btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                                    <button type="submit" class="btn btn-success btn-sm ml-1">Sign in</button>
                                 </div>
                             </form>
                         </div>
@@ -86,14 +86,14 @@
         <div class="col-sm-4">
             <h5>Our Address</h5>
             <address>
-                1 Nucamp Way<br />
-                Seattle, WA 98001<br />
+                123 Main St<br />
+                Golf Hills, MN 551155<br />
                 U.S.A.
             </address>
         </div>
         <div class="col">
             <a role="button" class="btn btn-link" href="tel:+12065551234"><i class="fa fa-phone"></i> 1-206-555-1234</a><br />
-            <a role="button" class="btn btn-link" href="mailto:campsites@nucamp.co"><i class="fa fa-envelope-o"></i> Hawkpines@gmail.com</a>
+            <a role="button" class="btn btn-link" href="Hawkpines@gmail.com"><i class="fa fa-envelope-o"></i> Hawkpines@gmail.com</a>
         </div>
     </div>
 
@@ -152,7 +152,7 @@
                 </div>
                 <div class="form-group row">
                     <div class="offset-md-2 col-md-10">
-                        <button type="submit" class="btn btn-primary">Send Feedback</button>
+                        <button type="submit" class="btn btn-danger">Send Feedback</button>
                     </div>
                 </div>
             </form>
@@ -183,5 +183,6 @@
          <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
          <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
          <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+         <script src="script.js"></script>
     </body>
     </html>
